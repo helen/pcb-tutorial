@@ -1,4 +1,88 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR?
+U 1 1 6034AA97
+P 3400 1850
+F 0 "#PWR?" H 3400 1700 50  0001 C CNN
+F 1 "+5V" H 3415 2023 50  0000 C CNN
+F 2 "" H 3400 1850 50  0001 C CNN
+F 3 "" H 3400 1850 50  0001 C CNN
+	1    3400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U?
+U 1 1 603422EB
+P 3500 3800
+F 0 "U?" H 3500 1911 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3500 1820 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3500 3800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3500 3800 50  0001 C CNN
+	1    3500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1850 3400 2000
+Wire Wire Line
+	3400 2000 3500 2000
+Connection ~ 3400 2000
+Connection ~ 3500 2000
+Wire Wire Line
+	3500 2000 3600 2000
+$Comp
+L power:GND #PWR?
+U 1 1 60353577
+P 3050 5600
+F 0 "#PWR?" H 3050 5350 50  0001 C CNN
+F 1 "GND" H 3055 5427 50  0000 C CNN
+F 2 "" H 3050 5600 50  0001 C CNN
+F 3 "" H 3050 5600 50  0001 C CNN
+	1    3050 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5600 3400 5600
+Connection ~ 3400 5600
+Wire Wire Line
+	3400 5600 3500 5600
+$Comp
+L Device:R_Small R?
+U 1 1 60354F38
+P 4500 4400
+F 0 "R?" V 4304 4400 50  0000 C CNN
+F 1 "10k" V 4395 4400 50  0000 C CNN
+F 2 "" H 4500 4400 50  0001 C CNN
+F 3 "~" H 4500 4400 50  0001 C CNN
+	1    4500 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60356495
+P 4950 4400
+F 0 "#PWR?" H 4950 4150 50  0001 C CNN
+F 1 "GND" H 4955 4227 50  0000 C CNN
+F 2 "" H 4950 4400 50  0001 C CNN
+F 3 "" H 4950 4400 50  0001 C CNN
+	1    4950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4400 4400 4400
+Wire Wire Line
+	4600 4400 4950 4400
 $EndSCHEMATC
